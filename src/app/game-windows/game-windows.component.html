@@ -1,0 +1,30 @@
+<div
+  class="container d-flex justify-content-center align-items-center"
+  style="height: 100vh; width: 100vw"
+>
+  <div class="card">
+    <div class="card-body">
+      <form [formGroup]="formData">
+        <div class="d-flex justify-content-center align-items-center">
+          <div >
+            {{ formData.controls.a.value }}+{{ formData.controls.b.value }}=
+          </div>
+          <div>
+            <input formControlName="answer" class="form-control" />
+          </div>
+          
+        </div>
+        <div class="d-flex justify-content-center">
+            Duration  {{time | number :"1.1-3"}}
+         </div>
+      </form>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
